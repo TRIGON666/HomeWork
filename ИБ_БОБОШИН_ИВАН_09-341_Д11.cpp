@@ -245,13 +245,6 @@ int main() {
 	for (int i = 0; i < r1; ++i) {
 		for (int j = 0; j < c1; ++j) cin >> arr2[i][j];
 	}
-	int v = 1;
-	for (int i = 0; i < r1; i++) {
-		for (int j = 0; j < c1; j++) {
-			arr2[i][j] = v;
-			v++;
-		}
-	}
 	int* minV2 = minV(arr2, r1, c1);
 	cout << "Mинимальное значение: ";
 	for (int i = 0; i < r1; i++) {
